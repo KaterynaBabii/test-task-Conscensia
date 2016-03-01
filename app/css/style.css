@@ -1,0 +1,372 @@
+body{
+    color: #4b565b;
+    font-family: "Open Sans",serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    word-spacing: 3px;
+}
+/* =======================================================
+   General
+   ======================================================= */
+  section {
+      overflow: hidden;
+      /*padding: 50px 0;*/
+  }
+  .section-header{
+     text-align: center;
+  }
+  .sec-title{
+    text-align: center;
+    margin-bottom:80px;
+    margin-top: 50px;
+  }
+  .sec-title h2{
+    color:#e7b315;
+  }
+  @font-face {
+  font-family: 'et-line';
+  src:url('../fonts/et-line.eot');
+  src:url('../fonts/et-line.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/et-line.woff') format('woff'),
+    url('../fonts/et-line.ttf') format('truetype'),
+    url('../fonts/et-line.svg#et-line') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  /* =======================================================
+   Section header-navigation
+   ======================================================= */
+  header{
+    position: relative;
+  }
+/*Logo*/
+   .logo::before {
+    content: "\0050";
+    left:100px;
+    position: absolute;
+    top: 15px;
+    font-weight: bold;
+    font-size: 50px;
+     color:#e7b315;
+    /*transform:scale(1,2)*/
+   }
+   .logo-text{
+    left:135px;
+    top:10px;
+    position: absolute;
+    font-size: 19px;
+    font-weight: bold;  
+    color:#e7b315;
+
+   }
+   .logo-subtext{
+    left:120px;
+    top:26px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color:#e7b315;
+   }
+/*Nav*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  z-index: 200;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: rgba(22, 38, 46, 0.95);
+
+}
+.navbar-default .navbar-nav > li > a {
+  color: white; 
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #e7b315;
+}
+ 
+/* =======================================================
+   Bg - paralax
+   ======================================================= */
+  #bg-paralax {
+      background-image: url("../img/2.jpg");
+      text-align: center;
+      color:#e7b315;
+  }
+  .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+  }
+  .caption h1{
+      margin:200px 0px;
+      font-size: 67px;
+  }
+
+/* =======================================================
+   Section Portfolio
+   ======================================================= */
+
+.blog-masonry{
+  margin-top:10px;
+}
+.post-masonry {
+  margin-bottom: 30px;
+}
+.post-masonry .post-thumb {
+    border: 10px solid grey;
+    overflow: hidden;
+    position: relative;
+}
+.post-masonry .post-thumb img {
+    width: 100%;
+    display: block;
+}
+.post-masonry .post-thumb .title-over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    padding: 15px 20px;
+}
+
+.post-masonry .post-thumb .title-over h4 {
+    font-size: 16px;
+}
+
+.post-masonry .post-thumb .title-over a {
+    color: #e7b315;
+}
+
+.post-masonry .post-thumb .post-hover {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -50px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0,0,0,0.9);
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.post-masonry .post-thumb .post-hover .inside {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.post-masonry .post-thumb .post-hover h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.post-masonry .post-thumb .post-hover p {
+    font-size: 12px;
+}
+.post-masonry .post-thumb .post-hover a {
+    color: #fff;
+}
+
+.post-masonry .post-thumb .post-hover i {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post-masonry .post-thumb .post-hover span {
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.post-masonry .post-thumb:hover .title-over {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    bottom: -50px;
+}
+
+.post-masonry .post-thumb:hover .post-hover {
+    bottom: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* =======================================================
+   About Us - paralax
+   ======================================================= */
+
+   .about-us-section, .work-process{
+    background-color: #16262e;
+     color: #fff;
+    padding: 50px 0;
+   }
+    .btn-link-a,.about-us-section h4, .work-process h4{
+     color: #e7b315;
+   }
+   /* =======================================================
+    Process Icon
+   ======================================================= */
+.icon-chat, .icon-browser, .icon-happy {
+   display: inline-block;
+    font-family: "et-line";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+    color: #e7b315;
+  }
+  .icon-chat:before {
+    content: "\e049";
+  }
+  .icon-browser:before {
+    content: "\e00c";
+  }
+  .icon-happy:before {
+    content: "\e05b";
+  }
+  .process-icon span {
+      color: #e7b315;
+      font-size: 40px;
+  }
+  .process {
+      padding-top: 30px;
+  }
+  .text-center {
+      text-align: center;
+  }
+   /* =======================================================
+    How it works
+   ======================================================= */
+.how-it-work .nav-tabs > li {
+  width: 25%;
+  text-align: center;
+}
+.how-it-work .nav-tabs > li > a {
+    background-color: transparent !important;
+    border-width: 0 ;
+    box-shadow: none ;
+    color: #ced4d6;
+    position: relative;
+    outline-width: 0;
+}
+.how-it-work .nav-tabs > li > a span.tab-num {
+  display: block;
+ 
+  font-weight: 600;
+  color: #16262e;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #dbdedf;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0;
+  text-transform: uppercase;
+  width: 55px;
+  line-height: 49px;
+  margin-bottom: 10px;
+  -webkit-transition: border-color 0.4s, color 0.4s;
+          transition: border-color 0.4s, color 0.4s;
+}
+.how-it-work .nav-tabs > li > a span.mg-bs-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #dbdedf;
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  margin-top: -17px;
+  z-index: -1;
+}
+.how-it-work .nav-tabs > li > a span.mg-bs-bar:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #e7b315;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: width 0.4s;
+          transition: width 0.4s;
+}
+.how-it-work .nav-tabs > li.active > a {
+  border-width: 0;
+  color: #16262e;
+}
+.how-it-work .nav-tabs > li.active > a span.tab-num {
+  color: #e7b315;
+  border-color: #e7b315;
+}
+.how-it-work .nav-tabs > li.mg-step-done > a {
+  color: #e7b315;
+}
+.how-it-work .nav-tabs > li.mg-step-done > a span.tab-num {
+  color: #fff;
+  border-color: #e7b315;
+  background-color: #e7b315;
+}
+.how-it-work .nav-tabs > li.mg-step-done > a span.mg-bs-bar:after {
+  width: 100%;
+}
+.how-it-work .tab-content {
+  padding: 0;
+  border-width: 0;
+  margin-bottom: 50px;
+}
+
+  /* =======================================================
+    Why choose us
+   ======================================================= */
+
+.photo-gallery, .choose-box {
+    list-style: outside none none; 
+}
+.photo-gallery > li {
+    float: left;
+       border: 3px solid white;
+}
+/*.mg-footer-widget .photo-gallery a::before {
+    color: #fff;
+    content: "";
+    font-family: "FontAwesome";
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 0.5s ease 0s, transform 0.5s ease 0s;
+    z-index: 10;
+}
+.mg-footer-widget .photo-gallery a::after {
+    background-color: rgba(0, 0, 0, 0);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.5s ease 0s;
+    width: 100%;
+    z-index: 9;
+}*/
